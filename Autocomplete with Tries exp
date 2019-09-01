@@ -1,0 +1,21 @@
+Autocomplete with Tries
+
+data structure used:Tries
+
+Operation:
+Operations like find, insert and suffix were implemented using tries to build an autocorrect feature. Insert function is used to insert a new word to the trie structure, find function is used to search for the node which represents the entered prefix and the suffix is a recursive function that collects the suffix for all complete words below this(the node returned by find function) point
+
+Time Complexity:
+
+Insert and Find:
+These two operations will take the time equal to the length of the word, let the length of the word be m and if there are n words then the time complexity is O(m*n)
+
+Suffixes:
+Finding all words by prefix will take O(P) * O(S) where S is the sum of lengths of all suffixes returned and P is the length of the prefix supplied.
+
+Space Complexity:
+Insert:
+In the worst case newly inserted key doesn't share a prefix with the the keys already inserted in the trie. We have to add m new nodes, so the space complexity is O(m)
+
+Suffix:
+We are collecting list of words from the trie which share the same prefix, so is S is the sum of lengths of all suffixes returned (ie the length of the list) then the space complexity will be O(S)
