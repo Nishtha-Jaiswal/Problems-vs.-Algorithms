@@ -1,0 +1,22 @@
+HTTPRouter using a Trie
+
+Data structure used: Tries
+
+Operation:
+Search, insert, lookup and split functions were implemented using tries for working with urls. 
+Insert function is used to insert a new node to the trie structure and also to assign the handler with the leaf node of the url. 
+Find function starts searching at the root then navigates the Trie to find a match for the url and returns the handler for a match, or None for no match.
+Lookup function looksup for the url in parts (returned from split_path function).
+Split_path function the input url is split when slash (/) is encountered to indicate a new folder  
+
+Time Complexity:
+Find and Insert:
+Searching and Insertion will take the time equal to the length of the url being searched for, let the length of the url be n then the time complexity is O(n)
+
+Space Complexity:
+Insert
+If the urls have no folder in common then the space complexity would be O(n), where n is the number of folders in the url.
+
+Find:
+We will return the handler by searching in the list (list named url for this solution) created by splitting the url entered by the user, if the length of the path entered by the user is n hence, same will be the length of the list, then space complexity will be O(n). 
+
