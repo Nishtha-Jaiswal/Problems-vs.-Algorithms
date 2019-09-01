@@ -1,0 +1,19 @@
+Finding the Square Root of an Integer
+
+algorithm used: Binary Search
+
+operation:
+Newton's method to calculate square root of any integer.( if x^2 = a. So, Xn+1 = (Xn + (a/Xn))/2 )
+
+We first find the middle number from the range of 0 to input number, since the square root of every number is less than its half, so  we only consider the range from 0 to middle number, this also shows that evreytime we are only searching half of the range like in binary search.
+
+Time Complexity:
+since the number is getting divided by a constant amount so the time complexity is in logarithmic terms. And also that the time complexity will be equal to that of binary search
+time complexity= O(log(n))
+
+Space Complexity:
+As there is no separate memory allocation/used (like array, list) so the space does not depend on the input, so space complexity is constant ie O(1)
+
+
+Source Used
+https://math.mit.edu/~stevenj/18.335/newton-sqrt.pdf
