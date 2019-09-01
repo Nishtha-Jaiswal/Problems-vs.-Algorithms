@@ -1,0 +1,13 @@
+Search in a Rotated Sorted Array
+
+algorithm: Binary Search
+
+operation:
+The list is split into two halves, then which ever part is sorted is searched (both left and right part of the split list is checked) for the element. If the number is not within the range of the sorted part, then we are splitting the other half into two and we are doing this modified binary search again in those two halves.
+
+Time Complexity:
+Since we are using binary search so time complexity is O(log n)
+
+Space Complexity:
+The space complexity is constant because there is on separate memory allocation done, and here the space does not depend on the input size, so the space used remains same for every iteration
+space complexity is O(1)   
