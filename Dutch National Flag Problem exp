@@ -1,0 +1,12 @@
+Dutch National Flag Problem
+
+algorithm: similar to quick sort
+
+operation:
+Solution is similar to implementig quicksort, here pivot is the first element.The difference here is that the value of pivot keeps changing depending on  whether the value of pivot is 0,1 or 2. The solution is implemented in single traversal
+
+Time Complexity:
+Time complexity is O(n) as specified in the problem statement.
+
+Space Complexity:
+If we exclude the input size then only a few variables are declared, so the extra space needed is the same for any input size, this gives a constant space complexity of O(1).
