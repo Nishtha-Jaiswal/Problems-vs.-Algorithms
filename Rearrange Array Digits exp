@@ -1,0 +1,13 @@
+Rearrange Array Elements
+
+algorithm: merge sort (divide and conquer)
+
+operation:
+Firstly the given list is sorted then alternate elements are taken to form a number.
+Alternate elements are selected because by doing so we can satisfy the two given conditions that are first, the sum of the numbers should maximum and second,there should be maximum a digit difference between them. 
+
+Time Complexity:
+The dominant part of the solution that takes majority of the time is the merge sort algorithm, so time complexity for merge sort is O(nlog(n))
+
+Space Complexity:
+We are using a buffer array of the length equal to the number of inputs , so the space complexity is O(n)
