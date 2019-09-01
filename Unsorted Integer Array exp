@@ -1,0 +1,12 @@
+Max and Min in a Unsorted Array
+
+Algorithm:Linear search
+
+Operation:
+both the max_no and min_no are initialized to the 0th element of the input list and with a single traversal of the inpust list, the min and max number is found out using comparision.
+
+Time Complexity:
+Single traversal of whole input list leads to a time complexity of O(n)
+
+Space Complexity:
+If the input list size is ignored the we have oly declared two variables, so this gives a constant space complexity that is O(1).  
