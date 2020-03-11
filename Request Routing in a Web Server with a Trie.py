@@ -29,15 +29,15 @@ class RouteTrie:
             node = node.children[url_path]
         return node.handler
 
-# A RouteTrieNode will be similar to our autocomplete TrieNode... with one additional element, a handler.
+# A RouteTrieNode will have one additional element, a handler.
 class RouteTrieNode:
     def __init__(self):
-        # Initialize the node with children as before, plus a handler
+        # Initialize the node with children, plus a handler
         self.children = {}
         self.handler = None
 
     def insert(self, url_path):
-        # Insert the node as before
+        # Insert the node
         if url_path not in self.children:
             self.children[url_path] = RouteTrieNode()
         pass
